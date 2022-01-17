@@ -1,4 +1,4 @@
-# mecha_bot
+# quote_bot
 
 A new Flutter application.
 
