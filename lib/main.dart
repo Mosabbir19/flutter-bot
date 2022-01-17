@@ -3,8 +3,6 @@ import 'package:flutter_dialogflow/dialogflow_v2.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:speech_to_text/speech_to_text.dart' as stt;
 
-import 'BotSuggestions.dart';
-
 void main() {
   runApp(MyApp());
 }
