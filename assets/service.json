@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pivotal-store-299215",
+  "private_key_id": "b874887adfb1ab45aec730368760f45b623354d4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC5kuv6yYMSAtv4\n1tdoXeq7NoFInoRe9ovcz3uaJV6ibOxpevZ8bu4QjXnfGb2dvzrD3Nteu6Wh4ZC9\nSqTtZt2wz1SdBmhxP4tZD5OGR3mAg0xipcmiWBwXeWidwO0cPb1q3Puzmz5HNN4N\nRSdqTPAO8d94toOrbPaxqefhzC6s9xzpZt3i7lsZ7+KC8jNyOthlzmuDVHfdsMec\nK761PTvex0L0HHkVB1fFC3qEk7R8hJDAiMq5pCWgm7E20Y7L6HrD2PnrvzvPqNLq\nlhLPhJeaA0Okf2K+OPXhDpw0WX1RIn80XbkjQU4tP1WRj1FEFRBY7tZ/8mqvPpZJ\nVSX9jIAVAgMBAAECggEAKMpcN5By0JMzUfO7fpPiREt7SICbfRo5bQxoUV40eoRx\nxM/D/V8O0jGe38TTMqj1nFbgG2coxbgEri8JqKtLQJGaOjfN3lLG6Qks9r+gO/jg\nYfCqLRar+hb0QXTGScZia+puIzEVE+bRhl40hz+pJsfQxMJtl9FIOo4ry6yrd9Yr\ntkCPDT+v87DaNRjJVluz1qC20MaT9CEceGvARScE0Q4zuzTMTWzzFbtMUvphh8K/\nnV0nVep62ai1s+Vn0pB625tBb2EJpW2YxBgLZJHLWL+0fUL89S+mHJDZfMMwUIJ8\nbvXId4BHPOwL+41hwiGlcGr56qfoZKQHp4AeZuUfcQKBgQDgmBpKym5bRcVKDa8b\nI3sjjpNHTWXKdkENF40fLuDBlqZFXcTEkKRvSph/8COjXfvk33vS4ltJt66dAwsZ\nvGPXAP4t4Ck9/C4TkpFI1gs4cfBiJJ48Z2pgonimy8TfGFJ4IOcdgaQxwD+81njD\nzLERvMZylSetKwNEsDkep8dlXQKBgQDThf6ClwHm1gblOsloxadiIPG0LrpkGpo3\nncnNoiZiITE6aP2SDiI6/F20ud5jl4gWUQMTNQDR0EAANT+QC+DqvKjTBJo2L/kh\nmul+Mm1DI8o/IGe+S7UDncSUcrBpF47IT1IwBd1JZo0nMvb30Q5K72zdZ/uZy8Us\nBVIyRP5iGQKBgAU55Nq6rSi4jee0O8/g2nuwVKMDHQxCBi98zc7c82Pt0n6ouOxu\nBTWFwdiwSNQDWtovjR0SIVesy4ZhzL9Tj+sv3bpJjgwgMx5HedP9DxPIKvTNr1Tu\nfx4yiaYv9avPUBP1iAs6ugxiUdleED9WIwSrpN6DtAGmj5Pomdupwc0NAoGBALf1\n0Bx5AoFk4IhaMTJ6vBE+v5dKEHbhIACArTK29BTh8zNufiGZQzHzq/dyszQAZK2r\n9TWuIjFXoWHM7aP0gL8GJvmnBgtce5o7ZRiI+Lesl8eBAljg9OPZQU8t07kCcP5K\n5hq37vVYSCiwTVPHsFuBkTeZqJrgOnIHiq4HjQl5AoGBAIZknQf0v2yAv3Xca2U6\nndDYbXIkvxAgIBcoy8+VjvxQLsoO+uTkdte3UcCJqWV98mT2xLIHey/NDgZiC7eq\nLrr6ayxIAKsR4jgRLTwj0dBqBA7eX/UNqbS2Qpe+DqqjqI8Z5bTu+rsIjFAmMnAO\nXEndJjxB/uXse7FfRnAyHsLk\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow@pivotal-store-299215.iam.gserviceaccount.com",
+  "client_id": "106190043388221201439",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow%40pivotal-store-299215.iam.gserviceaccount.com"
+}

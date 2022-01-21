@@ -7,7 +7,7 @@
     <item
         android:width="270dp"
         android:height="270dp"
-        android:drawable="@drawable/mechabot_logo"
+        android:drawable="@drawable/quotebot"
         android:gravity="center" >
            
     </item>

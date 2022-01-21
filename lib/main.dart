@@ -23,23 +23,6 @@ class _MyAppState extends State<MyApp> {
     super.initState();
     _speech = stt.SpeechToText();
   }
-//
-////////expand by character
-  // int charLength = 0;
-  // double textFieldLength = 45;
-  // _onChanged(String value) {
-  //   setState(() {
-  //     charLength = value.length;
-  //     if (charLength < 26)
-  //       textFieldLength = 45;
-  //     else if (charLength > 26 && charLength < 46) {
-  //       textFieldLength = 65;
-  //     } else if (charLength > 50) {
-  //       textFieldLength = 88;
-  //     } else
-  //       textFieldLength = 45;
-  //   });
-  // }
 
 //text box line count
   int lineLength = 1;
@@ -60,34 +43,12 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  List<String> suggestion = ['Hi', 'Appointment', 'Official Number'];
-
-  // void check(userMessage) async {
-  //   print('User: $userMessage');
-  //   AuthGoogle authGoogle =
-  //       await AuthGoogle(fileJson: 'assets/mechabot-w9dg-398cd9a005e1.json')
-  //           .build();
-  //   Dialogflow dialogflow =
-  //       Dialogflow(authGoogle: authGoogle, language: Language.english);
-  //   AIResponse response = await dialogflow.detectIntent(userMessage);
-  //   var botSuggestions =
-  //       BotSuggestions(response.getListMessage()[0]["text"]["text"][0]);
-  //   print('Bot: ${response.getMessage()}');
-  //   print('Suggestions: ${botSuggestions.suggestions}');
-
-  //   // userMessage = botSuggestions.suggestions.first;
-  //   // print('User: $userMessage');
-  //   // response = await dialogflow.detectIntent(userMessage);
-  //   // botSuggestions = BotSuggestions(response.getListMessage());
-  //   // print('Bot: ${response.getMessage()}');
-  //   // print('Suggestions: ${botSuggestions.suggestions}');
-  // }
+  List<String> suggestion = ['Quote', 'Motivational', 'Inspirational'];
 
   //dialogflow is called
   void response(query) async {
     AuthGoogle authGoogle =
-        await AuthGoogle(fileJson: 'assets/mecha-bot-310913-d602a566da35.json')
-            .build();
+        await AuthGoogle(fileJson: 'assets/service.json').build();
     Dialogflow dialogflow =
         Dialogflow(authGoogle: authGoogle, language: Language.english);
     AIResponse aiResponse = await dialogflow.detectIntent(query);
@@ -109,19 +70,11 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Mecha Bot'),
-          backgroundColor: Color(0xff053d45),
+          title: Text('Quote Bot'),
+          backgroundColor: Color(0xff4370b7),
         ),
         body: Container(
-            //background image
-            decoration: new BoxDecoration(
-              image: new DecorationImage(
-                colorFilter: new ColorFilter.mode(
-                    Colors.white.withOpacity(0.2), BlendMode.dstATop),
-                image: new AssetImage("assets/launcher icon.png"),
-                fit: BoxFit.cover,
-              ),
-            ),
+            color: Colors.blueGrey[900],
             child: Column(
               children: [
                 Flexible(
@@ -139,15 +92,18 @@ class _MyAppState extends State<MyApp> {
                               : Alignment.topRight),
                           child: Container(
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
+                              borderRadius: BorderRadius.circular(10),
                               color: (messages[index]["data"] == 0
-                                  ? Colors.grey.shade200
-                                  : Colors.teal[100]),
+                                  ? Color(0xff0c121c)
+                                  : Color(0xff4370b7)),
                             ),
                             padding: EdgeInsets.all(16),
                             child: Text(
                               messages[index]["message"],
-                              style: TextStyle(fontSize: 15),
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.white,
+                              ),
                             ),
                           ),
                         ),
@@ -160,8 +116,12 @@ class _MyAppState extends State<MyApp> {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       ActionChip(
-                          backgroundColor: Colors.grey[300],
-                          label: Text(suggestion[0]),
+                          side: BorderSide.none,
+                          backgroundColor: Colors.greenAccent[400],
+                          label: Text(
+                            suggestion[0],
+                            style: TextStyle(color: Colors.black),
+                          ),
                           onPressed: () {
                             setState(() {
                               messageInsert.text = suggestion[0];
@@ -172,8 +132,11 @@ class _MyAppState extends State<MyApp> {
                             messageInsert.clear();
                           }),
                       ActionChip(
-                          backgroundColor: Colors.grey[300],
-                          label: Text(suggestion[1]),
+                          backgroundColor: Colors.greenAccent[400],
+                          label: Text(
+                            suggestion[1],
+                            style: TextStyle(color: Colors.black),
+                          ),
                           onPressed: () {
                             setState(() {
                               messageInsert.text = suggestion[1];
@@ -184,8 +147,11 @@ class _MyAppState extends State<MyApp> {
                             messageInsert.clear();
                           }),
                       ActionChip(
-                          backgroundColor: Colors.grey[300],
-                          label: Text(suggestion[2]),
+                          backgroundColor: Colors.greenAccent[400],
+                          label: Text(
+                            suggestion[2],
+                            style: TextStyle(color: Colors.black),
+                          ),
                           onPressed: () {
                             setState(() {
                               messageInsert.text = suggestion[2];
@@ -208,29 +174,6 @@ class _MyAppState extends State<MyApp> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Flexible(
-                        // child: Container(
-                        //   height: textFieldLength,
-                        //   decoration: BoxDecoration(
-                        //     borderRadius: BorderRadius.all(Radius.circular(25)),
-                        //     color: Colors.teal[50],
-                        //   ),
-                        //   padding: EdgeInsets.only(left: 15),
-                        //   child: TextField(
-                        //     expands: true,
-                        //     controller: messageInsert,
-                        //     keyboardType: TextInputType.multiline,
-                        //     maxLines: null,
-                        //     onChanged: _onChanged,
-                        //     decoration: InputDecoration(
-                        //       hintText: "Send your message",
-                        //       border: InputBorder.none,
-                        //       focusedBorder: InputBorder.none,
-                        //       enabledBorder: InputBorder.none,
-                        //       errorBorder: InputBorder.none,
-                        //       disabledBorder: InputBorder.none,
-                        //     ),
-                        //   ),
-                        // ),
                         child: Container(
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.all(Radius.circular(25)),
@@ -272,7 +215,7 @@ class _MyAppState extends State<MyApp> {
                                 onPressed: _listen,
                                 icon: Icon(
                                   _isListening ? Icons.mic : Icons.mic_none,
-                                  color: Colors.teal[800],
+                                  color: Color(0xff4370b7),
                                 ),
                               ),
                             ),
@@ -288,7 +231,7 @@ class _MyAppState extends State<MyApp> {
                             child: IconButton(
                               icon: Icon(
                                 Icons.send,
-                                color: Colors.teal[800],
+                                color: Color(0xff4370b7),
                               ),
                               onPressed: () {
                                 _isListening = false;

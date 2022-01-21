@@ -1,4 +1,4 @@
-package com.mechanickoi.mecha_bot
+package com.chatbotproject.quote_bot
 
 import io.flutter.embedding.android.FlutterActivity
 
