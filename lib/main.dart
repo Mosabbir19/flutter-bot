@@ -101,7 +101,7 @@ class _MyAppState extends State<MyApp> {
                             child: Text(
                               messages[index]["message"],
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 16,
                                 color: Colors.white,
                               ),
                             ),
