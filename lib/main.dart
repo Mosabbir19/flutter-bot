@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  List<String> suggestion = ['Quote', 'Motivational', 'Inspirational'];
+  List<String> suggestion = ['Quote', 'Motivational', 'Positive'];
 
   //dialogflow is called
   void response(query) async {
