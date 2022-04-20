@@ -27,9 +27,9 @@ It is an interactive bot that gives result based on users preference.
 
 ## Screenshots
 
- <img src = "screenshots/Screenshot_1.png" width = "400">
- <img src = "screenshots/Screenshot_2.jpg" width = "400">
- <img src = "screenshots/Screenshot_3.jpg" width = "400">
+ <img src = "screenshots/Screenshot_1.png" width = "300">
+ <img src = "screenshots/Screenshot_2.jpg" width = "300">
+ <img src = "screenshots/Screenshot_3.jpg" width = "300">
 
 ## 🔗 Links
 
