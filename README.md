@@ -1,5 +1,5 @@
 
-# Flutter Bot - Qoute bot
+# Flutter Bot - Quote bot
 
 Flutter Bot provides quotes. 
 It is an interactive bot that gives result based on users preference.
