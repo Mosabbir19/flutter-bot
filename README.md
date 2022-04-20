@@ -1,16 +1,36 @@
-# quote_bot
 
-A new Flutter application.
+# Flutter Bot - Qoute bot
 
-## Getting Started
+Flutter Bot provides quotes. 
+It is an interactive bot that gives result based on users preference.
 
-This project is a starting point for a Flutter application.
+## Language and API
 
-A few resources to get you started if this is your first Flutter project:
+    - Flutter
+    - Dart
+    - Dialogflow
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Features
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+    - Text message
+    - Suggestions
+    - Audio to text message
+
+## Plugins
+
+    1.	flutter_dialogflow - v0.1.3
+    2.	flutter_launcher_icons - v0.8.1
+    3.	flutter_launcher_name - v0.0.1
+    4.	speech_to_text - v3.1.0
+    5.	avatar_glow - v1.2.0
+
+
+## Screenshots
+
+ <img src = "screenshots/screenshots_1.png" width = "400">
+ <img src = "screenshots/screenshots_2.png" width = "400">
+ <img src = "screenshots/screenshots_3.png" width = "400">
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mosabbir-bhuiyan)
